@@ -7,14 +7,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.exam.facebook.dto.FileResponse;
+import com.exam.facebook.dto.response.FileResponse;
 import com.exam.facebook.service.FileService;
 
 import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequiredArgsConstructor
-public class BoardView {
+public class BoardViewController {
 
 	private final FileService fileService;
 	

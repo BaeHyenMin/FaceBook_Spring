@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.exam.facebook.dto.FileResponse;
+import com.exam.facebook.dto.response.FileResponse;
 
 import lombok.RequiredArgsConstructor;
 

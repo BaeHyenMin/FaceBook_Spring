@@ -1,4 +1,4 @@
-package com.exam.facebook.dto;
+package com.exam.facebook.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
