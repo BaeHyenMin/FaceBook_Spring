@@ -5,7 +5,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.exam.facebook.dto.FileResponse;
@@ -20,7 +19,6 @@ public class BoardView {
 	private final FileService fileService;
 	
 	@GetMapping("/uploads/{name}")
-	@ResponseBody
 	public ResponseEntity<byte[]> getFile(@PathVariable("name") String fileName) {
 		FileResponse res = fileService.getFile(fileName);
 		if (res.getContentType() != null) {
